@@ -24,7 +24,7 @@ function prepare(report) {
             }
         },
         
-        * func($, ctx) {
+        * func($, ...args) {
             if (typeof $ === 'function') {
                 yield function wrapped(...args) {
                     if (isError(args[0])) {
